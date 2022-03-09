@@ -6,7 +6,7 @@
    <div class="">
    
        <div class="col">
-       <img src="All%20necessary%20Images/pexels-pixabay-301920.jpg" height="70%" width="100%" />
+       <img src="All%20necessary%20Images/pexels-pixabay-301920.jpg" height="40%" width="100%" />
    </div>
    </div>
   
@@ -44,8 +44,8 @@
             </div>
         </div>
     </div>
-    <div class="img-fluid fa-image">
-        <img src="All%20necessary%20Images/pexels-pixabay-276005.jpg" height="80%" width="100%" />
+    <div class="img-fluid ">
+        <img src="All%20necessary%20Images/pexels-pixabay-276005.jpg" height="45%" width="100%" />
    </div>
    <!--  <div class="container">
         <div class="row">
