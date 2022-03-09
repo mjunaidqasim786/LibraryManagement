@@ -1,20 +1,29 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="LibraryManagement.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="Bootstrap/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Bootstrap/newstyle1.css" type="text/css">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <div class="">
+   <header class='masthead'>
+    <p class='masthead-intro'>Welcome To</p>
+    <h1 class='masthead-heading'>Elibrary By Junaid Qasim! <br /></h1>
+    <p class='masthead-intro'><a href="Usersignup.aspx">Click Here to Join</a></p>
+  </header>
+   <!-- <div class="">
    
        <div class="col">
        <img src="All%20necessary%20Images/pexels-pixabay-301920.jpg" height="40%" width="100%" />
    </div>
-   </div>
+   </div>-->
   
    
     <div class="container">
         <div class="row">
             <div class="col-12">
             <center>
+                <br />
+                <br />
+                <br />
                 <h2>Our Features</h2>
                 <p><b>Our 3 main Features</b></p>
             </center>

@@ -87,6 +87,7 @@ border-top: solid 1em #FFCF33;
 margin-bottom: 0.1em;
 font-family: "Gentium Book Basic", Georgia, serif;
   font-size: 2em;
+  color: green !important;
 }
 
 .masthead-heading {
