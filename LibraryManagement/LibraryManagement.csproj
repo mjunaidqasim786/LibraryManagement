@@ -69,6 +69,8 @@
   <ItemGroup>
     <Content Include="aboutus.aspx" />
     <Content Include="AdminLogin.aspx" />
+    <Content Include="All necessary Images\pexels-pixabay-276005.jpg" />
+    <Content Include="All necessary Images\pexels-pixabay-301920.jpg" />
     <Content Include="All necessary Images\pexels-pixabay-415071.jpg" />
     <Content Include="Bookinventory.aspx" />
     <Content Include="Book_Images\b1.jpg" />

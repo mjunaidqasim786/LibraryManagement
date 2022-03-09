@@ -3,13 +3,13 @@
     <link href="Bootstrap/style.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <div class="img-fluid">
-       <div class="row">
-       <div class="col class="image-fluid"">
-       <img src="All%20necessary%20Images/imgs/home-bg.jpg"  width="100%" />
+   <div class="">
+   
+       <div class="col">
+       <img src="All%20necessary%20Images/pexels-pixabay-301920.jpg" height="70%" width="100%" />
    </div>
    </div>
-   </div>
+  
    
     <div class="container">
         <div class="row">
@@ -24,30 +24,30 @@
             <div class="col-md-4">
                 <center>
                 <img src="All%20necessary%20Images/imgs/digital-inventory.png" width="150px"/>
-                <h4>Digital Book Inventry</h4>
-             <p class="text-justify">Master pages allow you to create a consistent look and behavior for all the pages (or group of pages) in your web application.</p>
+                <h4><a href="Usersignup.aspx">Digital Book Inventry</h4>
+             <p class="text-justify">Welcome to the exciting world of knowledge through e-Libraries established by Junaid Qasim with the help of dear teachers.</p>
                 </center>
             </div>
              <div class="col-md-4">
                 <center>
                     <img src="All%20necessary%20Images/imgs/search-online.png" width="150px"/>
-                <h4>Search Books</h4>
-             <p class="text-justify">Master pages allow you to create a consistent look and behavior for all the pages (or group of pages) in your web application.</p>
+                <h4><a href="Viewbooks.aspx">Search Books</a></h4>
+             <p class="text-justify">A library must be open and accessible to the whole community. This means designing a building that promotes equity for people.</p>
                 </center>
             </div>
              <div class="col-md-4">
                 <center>
-                    <img src="All%20necessary%20Images/imgs/defaulters-list.png" width="150px" />
-                <h4>Defaulters List</h4>
-             <p class="text-justify">Master pages allow you to create a consistent look and behavior for all the pages (or group of pages) in your web application.</p>
+                    <img src="All%20necessary%20Images/imgs/library.png" width="150px" />
+                <h4><a href="aboutus.aspx">Visit Us</a></h4>
+             <p class="text-justify">We are influenced by our social, economic and physical context, by climate, demographics and local culture, as well as changes in library services and digital technology.</p>
                 </center>
             </div>
         </div>
     </div>
-    <div class="img-fluid">
-        <img src="All%20necessary%20Images/imgs/in-homepage-banner.jpg" width="100%" />
+    <div class="img-fluid fa-image">
+        <img src="All%20necessary%20Images/pexels-pixabay-276005.jpg" height="80%" width="100%" />
    </div>
-     <div class="container">
+   <!--  <div class="container">
         <div class="row">
             <div class="col-12">
             <center>
@@ -79,5 +79,5 @@
                 </center>
             </div>
         </div>
-    </div>b
+    </div>-->
 </asp:Content>
