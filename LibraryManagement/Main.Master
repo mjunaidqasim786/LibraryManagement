@@ -6,8 +6,8 @@
 <head runat="server">
     <title>Library Management</title>
    
-    
     <link href="Bootstrap/custom.css" rel="stylesheet" />
+    
     <link href="Bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="Bootstrap/all.css" rel="stylesheet" />
     <link href="Bootstrap/jquery.dataTables.min.css" rel="stylesheet" />
@@ -27,7 +27,7 @@
             <a class="navbar-brand" href="Default.aspx">
                
                 <img src="Book_Images/books.png"width="30" height="30" />
-                ELibrary
+                ELibrary By Junaid
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,10 +39,10 @@
                             <a class="nav-link" href="Default.aspx">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="aboutus.aspx">About Us</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Terms</a>
+                            <a class="nav-link" href="Terms.aspx">Terms</a>
                         </li>
 
                     </ul>
@@ -107,7 +107,7 @@
             <div id="footer2" class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                        <p style="color:whitesmoke">&copy All right Reserved. <a class="footerlinks" href="#" target="_blank">Junaid Qasim</a></p>
+                        <p style="color:whitesmoke">&copy All right Reserved. <a class="footerlinks" href="aboutus.aspx" target="_blank">Junaid Qasim</a></p>
                     </div>
                 </div>
             </div>

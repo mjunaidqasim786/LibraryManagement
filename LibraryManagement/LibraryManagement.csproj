@@ -67,7 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="aboutus.aspx" />
     <Content Include="AdminLogin.aspx" />
+    <Content Include="All necessary Images\pexels-pixabay-415071.jpg" />
     <Content Include="Bookinventory.aspx" />
     <Content Include="Book_Images\b1.jpg" />
     <Content Include="All necessary Images\books\b2.jpg" />
@@ -99,9 +101,12 @@
     <Content Include="Bootstrap\jquery-3.4.1.slim.min.js" />
     <Content Include="Bootstrap\jquery.dataTables.min.css" />
     <Content Include="Bootstrap\jquery.dataTables.min.js" />
+    <Content Include="Bootstrap\newstyle.css" />
+    <Content Include="Bootstrap\newstyle1.css" />
     <Content Include="Bootstrap\popper.min.js" />
     <Content Include="Membermanagement.aspx" />
     <Content Include="Publishermanagement.aspx" />
+    <Content Include="Terms.aspx" />
     <Content Include="UserLogin.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="Usersignup.aspx" />
@@ -110,6 +115,13 @@
     <Content Include="Default.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="aboutus.aspx.cs">
+      <DependentUpon>aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aboutus.aspx.designer.cs">
+      <DependentUpon>aboutus.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminLogin.aspx.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -166,6 +178,13 @@
     </Compile>
     <Compile Include="Publishermanagement.aspx.designer.cs">
       <DependentUpon>Publishermanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Terms.aspx.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Terms.aspx.designer.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserLogin.aspx.cs">
       <DependentUpon>UserLogin.aspx</DependentUpon>
