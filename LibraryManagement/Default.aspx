@@ -24,7 +24,7 @@
             <div class="col-md-4">
                 <center>
                 <img src="All%20necessary%20Images/imgs/digital-inventory.png" width="150px"/>
-                <h4><a href="Usersignup.aspx">Digital Book Inventry</h4>
+                <h4><a href="Usersignup.aspx">Digital Book Inventry</a></h4>
              <p class="text-justify">Welcome to the exciting world of knowledge through e-Libraries established by Junaid Qasim with the help of dear teachers.</p>
                 </center>
             </div>
