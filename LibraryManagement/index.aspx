@@ -5,8 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <div class="img-fluid">
        <div class="row">
-       <div class="col">
-       <img src="All%20necessary%20Images/imgs/home-bg.jpg"  class="image-fluid"/>
+       <div class="col class="image-fluid"">
+       <img src="All%20necessary%20Images/imgs/home-bg.jpg"  width="100%" />
    </div>
    </div>
    </div>
