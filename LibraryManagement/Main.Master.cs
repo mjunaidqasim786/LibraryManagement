@@ -32,7 +32,7 @@ namespace LibraryManagement
                 {
                     LinkButton4.Visible = true;//logout
                     LinkButton5.Visible = true;//hello user
-                    LinkButton5.Text = "Hello " + Session["fullname"].ToString() +" (" +Session["username"].ToString()+")";
+                    LinkButton5.Text = "Hello " + Session["fullname"].ToString() +" (Click Here)";
                     LinkButton6.Visible = true;//admin login
 
 
