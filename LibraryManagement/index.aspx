@@ -57,21 +57,21 @@
                 </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <center>
                  <img src="All%20necessary%20Images/imgs/sign-up.png" width="150px"/>
                 <h4>Sign Up</h4>
              <p class="text-justify">Master pages allow you to create a consistent look and behavior for all the pages (or group of pages) in your web application.</p>
                 </center>
             </div>
-             <div class="col-md-4">
+             <div class="col-sm-4">
                 <center>
                     <img src="All%20necessary%20Images/imgs/search-online.png" width="150px"/>
                 <h4>Search Books</h4>
              <p class="text-justify">Master pages allow you to create a consistent look and behavior for all the pages (or group of pages) in your web application.</p>
                 </center>
             </div>
-             <div class="col-md-4">
+             <div class="col-sm-4">
                 <center>
                     <img src="All%20necessary%20Images/imgs/library.png" width="150px" />
                 <h4>Visit Us</h4>
