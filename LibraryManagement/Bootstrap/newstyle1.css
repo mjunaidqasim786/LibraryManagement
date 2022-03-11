@@ -4,7 +4,6 @@ body {
   font-size: 1rem;
   font-family: "Helvetica Neue", sans-serif;
 }
-
 .content-footer,
 .masthead-heading,
 .masthead-intro {
@@ -12,7 +11,7 @@ text-align: center;
 }
 
 .masthead {
-    padding: 6em 0;
+    padding: 4em 0;
     background-image: url('../All necessary Images/pexels-pixabay-415071.jpg');
     background-size: 1800px 500px;
     background-repeat: no-repeat;
@@ -32,21 +31,12 @@ text-align: center;
   color: #F1C863;
   margin-top: -0.2em;
   /* Typography Declarations */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif,'Sitka Heading' !important ;
+  font-family: 'Sitka Heading' !important ;
   font-weight: bold;
-  font-size: 6em;
-  letter-spacing: -0.02em;
+  font-size: 4em;
+  
   text-transform: uppercase;
 }
-
-
-
-
-
-
-
-
-
 
 .introduction > p,
 .location > p,
@@ -55,15 +45,15 @@ text-align: center;
   font-weight: 300;
   letter-spacing: 0.05em;
 }
-h2 {
+h2{
   /* Typography Declarations */
   font-family: "Gentium Book Basic", Georgia, serif;
-  font-size: 1.2em;
+  font-size: 3em !important;
   font-weight: bold;
 }
 
 
-a {
+a{
   font-weight: bold;
   text-decoration: none;
   color: #F1C863;

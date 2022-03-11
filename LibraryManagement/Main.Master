@@ -7,7 +7,7 @@
     <title>Library Management</title>
    
     <link href="Bootstrap/custom.css" rel="stylesheet" />
-    
+    <script src="Bootstrap/sweetalert.min.js"></script>
     <link href="Bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="Bootstrap/all.css" rel="stylesheet" />
     <link href="Bootstrap/jquery.dataTables.min.css" rel="stylesheet" />
