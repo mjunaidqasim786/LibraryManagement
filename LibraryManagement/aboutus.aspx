@@ -11,7 +11,7 @@
   </header>
   <section class="introduction-section">
       <h1>Introduction (Copy Pasted)</h1>
-      <p>I am nothing but piece of mud.</p>
+      <p>I am nothing but creature of God.</p>
       <p>I love the internet, technology, and building beautiful things.</p>
   </section>
   <section class="location-section">
