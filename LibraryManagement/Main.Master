@@ -6,8 +6,7 @@
 <head runat="server">
     <title>Library Management</title>
    <link rel="icon" type="image/x-icon" href="All%20necessary%20Images/Library%20by%20Junaid-logos__transparent%20(3).png">
-    <link href="Bootstrap/custom.css" rel="stylesheet" />
-    
+       <link href="Bootstrap/custom.css" rel="stylesheet" />
     <link href="Bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="Bootstrap/all.css" rel="stylesheet" />
     <link href="Bootstrap/jquery.dataTables.min.css" rel="stylesheet" />

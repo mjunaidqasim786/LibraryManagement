@@ -1,6 +1,6 @@
 
 
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     width: 8px;
 }
 
@@ -93,7 +93,7 @@ a:hover {
 }
 
 
-.card {
+/*.card {
     margin-top: 100px;
     margin-bottom: 100px;
     height : 1950px;
@@ -102,13 +102,13 @@ a:hover {
     background-color: #333541;
     margin-left: auto;
     margin-right: auto;
-}
+}*/
 
-.card .primary-heading {
+/*.card .primary-heading {
     text-align: center;
     font-family: josefin sans;
     color: white;
-    padding-top: 50px ;
+    padding-top: 50px;
     font-size: 4em;
 }
 
@@ -240,4 +240,4 @@ a:hover {
     .card .primary-heading {
         font-size: 2em;
     }
-}
+}*/

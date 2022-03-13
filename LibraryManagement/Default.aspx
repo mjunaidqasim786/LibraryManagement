@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="LibraryManagement.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script src="Bootstrap/bootstrap.bundle.min.js"></script>
-    <link href="Bootstrap/bonnotstrap.min.css" rel="stylesheet" />
+ 
     <link href="Bootstrap/customstyle.css" rel="stylesheet" />
   <link rel="stylesheet" href="Bootstrap/newstyle1.css" type="text/css">
 </asp:Content>
@@ -17,7 +16,7 @@
        <img src="All%20necessary%20Images/pexels-pixabay-301920.jpg" height="40%" width="100%" />
    </div>
    </div>-->
-   <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+   <div id="carouselExampleCaptions" class="carousel slide carousel-fade dtsclass " data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -25,16 +24,16 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="All%20necessary%20Images/pexels-pixabay-159711.jpg" height="66%" class="d-block w-100" alt="Image not loaded">
+      <img src="All%20necessary%20Images/pexels-pixabay-159711.jpg" height="66%" class="d-block h-50 w-100" alt="Image not loaded">
       <div class="carousel-caption d-none  d-md-block">
-        <h1>Get Your Account On Library By Junaid</h1>
+        <h1 class='masthead-heading' style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important">Get Your Account On Library By Junaid</h1>
     <a href="Usersignup.aspx">  <button class="glow-on-hover" type="button" >Get Started!</button></a>
            <br />
         <p>From above button You can get Access to lot of free Books.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="All%20necessary%20Images/pexels-pixabay-459791.jpg" height="66%"  class="d-block w-100" alt="Image not loaded">
+      <img src="All%20necessary%20Images/pexels-pixabay-459791.jpg" height="66%"  class="d-block h-50 w-100" alt="Image not loaded">
       <div class="carousel-caption d-none d-md-block">
         <h1>Get into Site</h1>
              <a href="Userlogin.aspx"> <button class="glow-on-hover" type="button" >Login</button>
@@ -43,7 +42,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="All%20necessary%20Images/pexels-pixabay-301920%20(1).jpg" height="66%"  class="d-block  w-100"  alt="Image not loaded">
+      <img src="All%20necessary%20Images/pexels-pixabay-301920%20(1).jpg" height="66%"  class="d-block h-50 w-100"  alt="Image not loaded">
       <div class="carousel-caption d-none d-md-block">
         <h1>View Our Books</h1>
        <a href="Viewbooks.aspx"> <button class="glow-on-hover" type="button">View Books!</button></a>
@@ -111,7 +110,9 @@
         &nbsp;<p class="title">The Creator</p>
         <p>I love the internet, technology, and building beautiful things.</p>
         <p>Mjunaidqasim786@gmail.com</p>
-      
+      <a href="https://wa.me/+923068695322">  <button class="glow-on-hover" type="button" >Contact Me!</button></a>
+           <br />
+          <br />
       </div>
       </div>
          
