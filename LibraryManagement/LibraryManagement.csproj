@@ -69,7 +69,7 @@
   <ItemGroup>
     <Content Include="aboutus.aspx" />
     <Content Include="AdminLogin.aspx" />
-    <Content Include="All necessary Images\Library by Junaid-logos__transparent %283%29.png" />
+    <Content Include="All necessary Images\Library by Junaid-logos__black %286%29.png" />
     <Content Include="All necessary Images\pexels-pixabay-159711.jpg" />
     <Content Include="All necessary Images\pexels-pixabay-301920 %281%29.jpg" />
     <Content Include="All necessary Images\pexels-pixabay-415071.jpg" />
@@ -82,9 +82,10 @@
     <Content Include="All necessary Images\books\b5.jpg" />
     <Content Include="Authormanagement.aspx" />
     <Content Include="bookissueing.aspx" />
-    <Content Include="Bootstrap\all.js" />
     <Content Include="Bootstrap\bonnotstrap.min.css" />
     <Content Include="Bootstrap\bootstrap.bundle.min.js" />
+    <Content Include="Bootstrap\bootstrap.min.css" />
+    <Content Include="Bootstrap\bootstrap.min.js" />
     <Content Include="Bootstrap\custom.css" />
     <Content Include="All necessary Images\imgs\adminuser.png" />
     <Content Include="All necessary Images\imgs\book-online.png" />
@@ -101,9 +102,6 @@
     <Content Include="All necessary Images\imgs\search-online.png" />
     <Content Include="All necessary Images\imgs\sign-up.png" />
     <Content Include="All necessary Images\imgs\writer.png" />
-    <Content Include="Bootstrap\all.css" />
-    <Content Include="Bootstrap\bootstrap.min.css" />
-    <Content Include="Bootstrap\bootstrap.min.js" />
     <Content Include="Bootstrap\customstyle.css" />
     <Content Include="Bootstrap\jquery-3.4.1.slim.min.js" />
     <Content Include="Bootstrap\jquery.dataTables.min.css" />

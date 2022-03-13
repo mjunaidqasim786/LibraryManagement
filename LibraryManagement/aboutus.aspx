@@ -4,21 +4,21 @@
  </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
  
-<header class='masthead'>
-    <p class='masthead-intro'>Hi I'm</p>
-    <h1 class='masthead-heading'>Junaid Qasim!</h1>
+<header class='mastheadju'>
+    <p class='mastheadju-intro'>Hi I'm</p>
+    <h1 class='mastheadju-heading'>Junaid Qasim!</h1>
     
   </header>
-  <section class="introduction-section">
+  <section class="introductionju-section">
       <h1>Introduction (Copy Pasted)</h1>
       <p>I am nothing but creature of God.</p>
       <p>I love the internet, technology, and building beautiful things.</p>
   </section>
-  <section class="location-section">
+  <section class="locationju-section">
       <h1>Where I'm From</h1>
       <p>I'm from Pakistan. </p>
   </section>
-  <section class="questions-section">
+  <section class="questionsju-section">
       <h1>More About Me</h1>
       <h2>What are your favorite hobbies?</h2>
       <p>My favorite hobby is building things on the internet..</p>
@@ -28,16 +28,14 @@
       <p>Place Does Not Matter</p>
       <h2>Be Positive And Humble</h2>
       <p>Because programming is awesome and programming for the internet is even more awesome.</p>
-  </section>
-  
-  <footer class="content-footer">
+
+  <footer class="contentju-footer">
       <p>Say hi to me on these social networks:</p>
-      <ul class="social">
+      <ul class="socialju">
           <li><a class="css-is-deranged" href="https://github.com/mjunaidqasim786">GitHub</a></li>
-          <li><a class="css-is-deranged" href="">Twitter</a></li>
-          <li><a class="css-is-deranged" href="">Google+</a></li>
       </ul>
+ 
     
   </footer>
-
+     
 </asp:Content>

@@ -1,17 +1,12 @@
-/* body {
-    /* Typography Declarations
-    color: #222222;
-    font-size: 1em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-}
 
-.content-footer,
-.masthead-heading,
-.masthead-intro {
+
+
+.mastheadju-heading,
+.mastheadju-intro {
     text-align: center;
 }
 
-.masthead {
+.mastheadju {
     padding: 6em 0;
     background-image: url('/pexels-pixabay-415071.jpg')!important;
     background-size: 1500px 500px;
@@ -19,77 +14,76 @@
     border-top: solid 1em #FFCF33;
 }
 
-.masthead-intro {
-    /* Layout Declarations 
+.mastheadju-intro {
+    /* Layout Declarations */
     margin-bottom: 0.1em;
-    /* Typography Declarations
+    /* Typography Declarations*/
     font-family: "Gentium Book Basic", Georgia, serif;
     font-size: 2em;
 }
 
-.masthead-heading {
-    /* Layout Declarations
-    color: #F1C863;
+.mastheadju-heading {
+    /* Layout Declarations*/
+    color: #00ff90;
     margin-top: -0.2em;
-    /* Typography Declarations 
+    /* Typography Declarations*/
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: bold;
     font-size: 6em;
     letter-spacing: -0.02em;
     text-transform: uppercase;
 }
-
-.introduction-section,
-.location-section,
-.questions-section {
+.contentju-footer,
+.introductionju-section,
+.locationju-section,
+.questionsju-section {
     max-width: 38em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
 }
 
-    .introduction-section > p,
+    .introductionju-section > p,
     .location-section > p,
     .questions-section,
-    .content-footer > p {
-        /* Typography Declarations 
+    .contentju-footer > p {
+        /* Typography Declarations */
         font-weight: 300;
         letter-spacing: 0.05em;
     }
 
-        .questions-section > h2 {
-            font-family: "Gentium Book Basic", Georgia, serif;
-            font-size: 1.2em;
-            font-weight: bold;
-            /* Layout 
-            margin: 2em 0 1em 0;
-        }
+    .questionsju-section > h2 {
+        font-family: "Gentium Book Basic", Georgia, serif;
+        font-size: 1.2em;
+        font-weight: bold;
+        /* Layout */
+        margin: 2em 0 1em 0;
+    }
 
-section > h1 {
-    margin-top: 2em;
+
+
+.contentju-footer,
+.mastheadju-heading,
+.mastheadju-intro {
+    text-align: center !important;
 }
 
-.content-footer,
-.masthead-heading,
-.masthead-intro {
-    text-align: center;
-}
-
-.masthead {
+.mastheadju {
     padding: 6em 0;
-    /* background-image: url('https://i.imgur.com/yGmrlyg.jpg');
-    /* background-size: cover; 
+   
+    background-image: url('../All necessary Images/pexels-pixabay-415071.jpg') !important;
+    background-size: cover;
     background-repeat: no-repeat;
     border-top: solid 1em #FFCF33;
 }
 
-.masthead-intro {
+.mastheadju-intro {
     margin-bottom: 0.1em;
     font-family: "Gentium Book Basic", Georgia, serif;
     font-size: 2em;
 }
 
-.masthead-heading {
+.mastheadju-heading {
     margin-top: -0.2em;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: bold;
@@ -97,60 +91,35 @@ section > h1 {
     letter-spacing: -0.02em;
     text-transform: uppercase;
 }
-
-.introduction > p,
-.location > p,
-.content-footer > p {
-    /* Typography Declarations 
+.contentju-footer > p,
+.introductionju > p,
+.locationju > p {
+    /* Typography Declarations */
     font-weight: 300;
     letter-spacing: 0.05em;
 }
-
-h2 {
-    /* Typography Declarations 
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.introduction-section,
-.location-section,
-.questions-section {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
-
-.content-footer {
-    margin: 50px 0;
+.contentju-footer {
+    margin: 50px 150;
     padding: 20px 0;
-    text-align: center;
-    background-color: #73A8C2;
+    text-align: center !important;
+ 
     text-decoration: none;
 }
-
-.social > li {
+.socialju > li {
     display: inline-block;
     margin: 0 5px;
 }
 
-
-
-a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #F1C863;
-}
-
 @media only screen and (max-width: 500px) {
-    .masthead {
+    .mastheadju {
         padding: 3em 0;
     }
 
-    .masthead-heading {
+    .mastheadju-heading {
         font-size: 3em;
     }
 
-  
-}*/
+    .contentju-footer {
+        padding: 2em 2.5em;
+    }
+}

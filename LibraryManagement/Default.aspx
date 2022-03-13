@@ -1,22 +1,23 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="LibraryManagement.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
- 
+    <script src="Bootstrap/bootstrap.bundle.min.js"></script>
+    <link href="Bootstrap/bonnotstrap.min.css" rel="stylesheet" />
     <link href="Bootstrap/customstyle.css" rel="stylesheet" />
   <link rel="stylesheet" href="Bootstrap/newstyle1.css" type="text/css">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-  <!-- <header class='masthead'>
-    <p class='masthead-intro'>Welcome To</p>
-    <h2 class='masthead-heading' style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;">Elibrary By Junaid Qasim! <br /></h2>
-    <p class='masthead-intro'><a href="Usersignup.aspx">Click Here to Join</a></p>
+  <!-- <header class='mastheadju'>
+    <p class='mastheadju-intro'>Welcome To</p>
+    <h2 class='mastheadju-heading' style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;">Elibrary By Junaid Qasim! <br /></h2>
+    <p class='mastheadju-intro'><a href="Usersignup.aspx">Click Here to Join</a></p>
   </header>-->
-   <!-- <div class="">
+    <!--<div class="">
    
        <div class="col">
        <img src="All%20necessary%20Images/pexels-pixabay-301920.jpg" height="40%" width="100%" />
    </div>
    </div>-->
-   <div id="carouselExampleCaptions" class="carousel slide carousel-fade dtsclass " data-bs-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -24,28 +25,35 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="All%20necessary%20Images/pexels-pixabay-159711.jpg" height="66%" class="d-block h-50 w-100" alt="Image not loaded">
-      <div class="carousel-caption d-none  d-md-block">
-        <h1 class='masthead-heading' style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important">Get Your Account On Library By Junaid</h1>
+      <img src="All%20necessary%20Images/pexels-pixabay-159711.jpg" class="d-block h:auto w-100 img-fluid" alt="Image not loaded">
+      <div  class="carousel-caption d-none d-md-block werty">
+        <h1 class="crh1">Get Your Account On Library By Junaid</h1>
+             <br />
     <a href="Usersignup.aspx">  <button class="glow-on-hover" type="button" >Get Started!</button></a>
+           <br />
            <br />
         <p>From above button You can get Access to lot of free Books.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="All%20necessary%20Images/pexels-pixabay-459791.jpg" height="66%"  class="d-block h-50 w-100" alt="Image not loaded">
-      <div class="carousel-caption d-none d-md-block">
-        <h1>Get into Site</h1>
+      <img src="All%20necessary%20Images/pexels-pixabay-459791.jpg"   class="d-block  h:auto w-100 img-fluid" alt="Image not loaded">
+      <div class="carousel-caption d-none d-md-block werty">
+        <h1 class="crh1">Get into Site</h1>
+             <br />
              <a href="Userlogin.aspx"> <button class="glow-on-hover" type="button" >Login</button>
-           <br /></a>
+         </a>
+          <br />
+          <br />
         <p>From above button You can get Access to your account if you have already sign up!</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="All%20necessary%20Images/pexels-pixabay-301920%20(1).jpg" height="66%"  class="d-block h-50 w-100"  alt="Image not loaded">
-      <div class="carousel-caption d-none d-md-block">
-        <h1>View Our Books</h1>
+      <img src="All%20necessary%20Images/pexels-pixabay-301920%20(1).jpg"  class="d-block h-auto img-fluid  w-100"  alt="Image not loaded">
+      <div class="carousel-caption d-none d-md-block werty">
+        <h1 class="crh1">View Our Books</h1>
+          <br />
        <a href="Viewbooks.aspx"> <button class="glow-on-hover" type="button">View Books!</button></a>
+     <br />
      <br />
         <p>You can view our lots of books by clicking view book button!</p>
       </div>
@@ -104,20 +112,19 @@
   <div class="col-md-5 col-lg-5">
         <div class="junaid">
             <div class="junaid2">
-      <img id="hhhhh" src="All%20necessary%20Images/Library%20by%20Junaid-logos__transparent%20(3).png" alt="Junaid Qasim" ></div>
+      <img id="hhhhh" src="All%20necessary%20Images/Library%20by%20Junaid-logos__black%20(6).png" alt="Junaid Qasim" ></div>
       <div class="junaid1">
       <h2 >Muhammad Junaid</h2>
         &nbsp;<p class="title">The Creator</p>
         <p>I love the internet, technology, and building beautiful things.</p>
         <p>Mjunaidqasim786@gmail.com</p>
       <a href="https://wa.me/+923068695322">  <button class="glow-on-hover" type="button" >Contact Me!</button></a>
-           <br />
-          <br />
+          
       </div>
       </div>
          
       </div>
-         <br /></div>
+         </div>
  
    
     <!--    <div class="img-fluid">
