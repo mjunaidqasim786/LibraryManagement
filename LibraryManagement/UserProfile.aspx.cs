@@ -168,7 +168,7 @@ namespace LibraryManagement
                 if (result > 0)
                 {
                 
-                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Your Account Updated Successfully','Success')", true);
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Your Account Updated Successfully','success')", true);
                     getuserdata();
                     getuserdata();
                 }

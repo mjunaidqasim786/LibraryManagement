@@ -70,7 +70,7 @@ namespace LibraryManagement
 
                     cmd.ExecuteNonQuery();
                     con.Close();
-                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Book Deleted Successfully','Success')", true);
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Book Deleted Successfully','success')", true);
 
                     GridView1.DataBind();
 
@@ -165,7 +165,7 @@ namespace LibraryManagement
                     con.Close();
                     GridView1.DataBind();
                   
-                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Book Updated Successfully','Success')", true);
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Book Updated Successfully','success')", true);
 
 
                 }
@@ -352,7 +352,7 @@ namespace LibraryManagement
                 cmd.ExecuteNonQuery();
                 con.Close();
                
-                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Book added successfully!','Success')", true);
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Book added successfully!','success')", true);
                 GridView1.DataBind();
 
             }

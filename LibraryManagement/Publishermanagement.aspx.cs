@@ -146,7 +146,7 @@ namespace LibraryManagement
                     command.ExecuteNonQuery();
                     sqlconnection.Close();
                  
-                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Publisher Added Sucessfully!','Success')", true);
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Publisher Added Sucessfully!','success')", true);
                     GridView1.DataBind();
                 }
                 catch (Exception ex)
@@ -163,7 +163,7 @@ namespace LibraryManagement
             {
                
                 updatePublisher();
-                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Publisher Updated Sucessfully!','Success')", true);
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Publisher Updated Sucessfully!','success')", true);
                 GridView1.DataBind();
             }
             else
@@ -180,7 +180,7 @@ namespace LibraryManagement
             {
                 deletePublisher();
                
-                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Publisher Deleted Sucessfully!','Success')", true);
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Publisher Deleted Sucessfully!','success')", true);
                 GridView1.DataBind();
             }
             else

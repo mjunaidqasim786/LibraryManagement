@@ -122,7 +122,7 @@
                          <div class="row">
                                 <div class="col-6 mx-auto"> 
                              <div class="form-group">  
-                                 <asp:Button ID="Button1" CssClass="btn btn-success btn-block btn-lg" runat="server" Text="Update" OnClick="Button1_Click" />  
+                                 <asp:Button ID="Button1" CssClass="btn btn-mastheadju btn-block btn-lg" runat="server" Text="Update" OnClick="Button1_Click" />  
                      </div>
                      </div>
                      </div>
@@ -142,7 +142,7 @@
                              <img src="All%20necessary%20Images/imgs/books1.png" width="150px" />
                          <h2>Your Issued Books </h2>
                            
-                            <span class="badge badge-pill badge-success"> <asp:Label ID="Label2" runat="server" Text="Your Books Info"></asp:Label></span>
+                            <span class="badge badge-pill badge-mastheadju"> <asp:Label ID="Label2" runat="server" Text="Your Books Info"></asp:Label></span>
                              </center>
                      </div>
                      </div>

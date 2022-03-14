@@ -200,7 +200,7 @@ namespace LibraryManagement
                     sqlconnection.Close();
                     GridView1.DataBind();
                    
-                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','BOOK Issued Successfully','Success')", true);
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','BOOK Issued Successfully','success')", true);
                 }
             }
             catch (Exception ex)
@@ -264,7 +264,7 @@ namespace LibraryManagement
                         command = new SqlCommand(query2, sqlconnection);
                         command.ExecuteNonQuery();
                        
-                        ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','BOOK Returned Successfully','Success')", true);
+                        ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','BOOK Returned Successfully','success')", true);
                     }
                     
 

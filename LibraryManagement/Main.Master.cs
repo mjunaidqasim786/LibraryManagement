@@ -63,7 +63,7 @@ namespace LibraryManagement
             }
             catch(Exception ex)
             {
-                Response.Write("<script>55('" + ex.Message + "');</script>");
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
         }
 
@@ -130,6 +130,7 @@ namespace LibraryManagement
             LinkButton9.Visible = false;//book inventory
             LinkButton10.Visible = false;//book issueing
             LinkButton11.Visible = false;//member mng
+            Response.Redirect("Default.aspx");
         }
 
         protected void LinkButton5_Click(object sender, EventArgs e)

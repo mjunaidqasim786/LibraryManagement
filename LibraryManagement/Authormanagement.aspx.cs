@@ -39,7 +39,7 @@ namespace LibraryManagement
                     sqlconnection.Close();
                    
                     GridView1.DataBind();
-                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Author added Successfully','Success')", true);
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Author added Successfully','success')", true);
                 }
                 catch (Exception ex)
                 {
@@ -57,7 +57,7 @@ namespace LibraryManagement
                 
                 updateauthor();
                 GridView1.DataBind();
-                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Author Updated Successfully','Success')", true);
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Author Updated Successfully','success')", true);
             }
             else
             {
@@ -72,7 +72,7 @@ namespace LibraryManagement
             if (CheckAuthorID())
             {
                 deleteauthor();
-                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Author Deleted Successfully','Success')", true);
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Author Deleted Successfully','success')", true);
                 GridView1.DataBind();
             }
             else

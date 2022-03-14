@@ -84,7 +84,7 @@ namespace LibraryManagement
                 command.ExecuteNonQuery();
                 sqlconnection.Close();
              
-                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Sign Up Sucessful. Go to User Login To Login','Success')", true);
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Sign Up Sucessful. Go to User Login To Login','success')", true);
             }
             catch (Exception ex)
             {

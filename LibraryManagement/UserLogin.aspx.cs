@@ -41,7 +41,7 @@ namespace LibraryManagement
                     while (sqlDataReader.Read())
                     {
                        
-                        ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Exxcellent!','Login Successful!','Success')", true);
+                        ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Exxcellent!','Login Successful!','success')", true);
                         Session["username"] = sqlDataReader.GetValue(8).ToString();
                         Session["fullname"] = sqlDataReader.GetValue(0).ToString();
                         Session["role"] = "user";
