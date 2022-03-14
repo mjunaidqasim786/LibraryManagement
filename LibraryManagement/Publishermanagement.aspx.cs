@@ -76,7 +76,8 @@ namespace LibraryManagement
                 }
                 else
                 {
-                    Response.Write("<script>alert('Invalid Publisher ID');</script>");
+                   
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Invalid Publisher ID!','warning')", true);
                 }
 
             }
@@ -128,7 +129,8 @@ namespace LibraryManagement
         {
             if (CheckPublisherID())
             {
-                Response.Write("<script>alert('Publisher ID Already Exists Try An other One');</script>");
+               
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Publisher ID Already Exists Try An other One','warning')", true);
             }
             else
             {
@@ -143,7 +145,8 @@ namespace LibraryManagement
                     SqlCommand command = new SqlCommand(query, sqlconnection);
                     command.ExecuteNonQuery();
                     sqlconnection.Close();
-                    Response.Write("<script>alert('Publisher Added Sucessfully');</script>");
+                 
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Publisher Added Sucessfully!','Success')", true);
                     GridView1.DataBind();
                 }
                 catch (Exception ex)
@@ -158,13 +161,15 @@ namespace LibraryManagement
         {
             if (CheckPublisherID())
             {
-                Response.Write("<script>alert('Publisher Updated Sucessfully');</script>");
+               
                 updatePublisher();
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Publisher Updated Sucessfully!','Success')", true);
                 GridView1.DataBind();
             }
             else
             {
-                Response.Write("<script>alert('Publisher Does not Exist');</script>");
+
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Publisher Does not Exist','warning')", true);
             }
             clearform();
         }
@@ -174,12 +179,13 @@ namespace LibraryManagement
             if (CheckPublisherID())
             {
                 deletePublisher();
-                Response.Write("<script>alert('Publisher Deleted Sucessfully');</script>");
+               
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Publisher Deleted Sucessfully!','Success')", true);
                 GridView1.DataBind();
             }
             else
             {
-                Response.Write("<script>alert('Publisher Does not Exist');</script>");
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Publisher Does not Exist','warning')", true);
             }
             clearform();
             GridView1.DataBind();

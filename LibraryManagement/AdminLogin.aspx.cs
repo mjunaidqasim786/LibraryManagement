@@ -15,7 +15,7 @@ namespace LibraryManagement
         string strconnection = ConfigurationManager.ConnectionStrings["connection"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -34,7 +34,8 @@ namespace LibraryManagement
                 {
                     while (sqlDataReader.Read())
                     {
-                        Response.Write("<script>alert('Login Successful');</script>");
+                     
+                        ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Login Successful!','Success')", true);
                         Session["username"] = sqlDataReader.GetValue(0).ToString();
                         Session["fullname"] = sqlDataReader.GetValue(2).ToString();
                         Session["role"] = "admin";
@@ -43,13 +44,13 @@ namespace LibraryManagement
                 }
                 else
                 {
-                    Response.Write("<script>alert('Invalid UserName Or Password');</script>");
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','You Entered wrong username or Password','error')", true);
                 }
 
             }
             catch (Exception ex)
             {
-                Response.Write("<script>55('" + ex.Message + "');</script>");
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
 
             }
         }

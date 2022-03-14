@@ -109,6 +109,7 @@
     <Content Include="Bootstrap\newstyle.css" />
     <Content Include="Bootstrap\newstyle1.css" />
     <Content Include="Bootstrap\popper.min.js" />
+    <Content Include="Bootstrap\sweetalert2%4011.js" />
     <Content Include="Membermanagement.aspx" />
     <Content Include="Publishermanagement.aspx" />
     <Content Include="Terms.aspx" />

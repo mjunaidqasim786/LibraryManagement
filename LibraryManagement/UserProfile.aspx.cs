@@ -167,13 +167,14 @@ namespace LibraryManagement
 
                 if (result > 0)
                 {
-                 Response.Write("<script>alert('Your Account Updated Successfully');</script>");
+                
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Your Account Updated Successfully','Success')", true);
                     getuserdata();
                     getuserdata();
                 }
                 else
                 {
-                    Response.Write("<script>alert('Invalid Entry');</script>");
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Something went wrong','error')", true);
                 }
                 sqlconnection.Close();
             }

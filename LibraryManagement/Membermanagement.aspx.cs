@@ -32,7 +32,8 @@ namespace LibraryManagement
             }
             else
             {
-                Response.Write("<script>alert('Invalid Member ID');</script>");
+                
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Invalid Member ID','warning')", true);
             }
         }
       
@@ -46,7 +47,7 @@ namespace LibraryManagement
             }
             else
             {
-                Response.Write("<script>alert('Invalid Member ID');</script>");
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Invalid Member ID','warning')", true);
             }
 }
       //Active
@@ -59,7 +60,7 @@ namespace LibraryManagement
             }
             else
             {
-                Response.Write("<script>alert('Invalid Member ID');</script>");
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Invalid Member ID','warning')", true);
             }
         }
 
@@ -71,7 +72,7 @@ namespace LibraryManagement
             }
             else
             {
-                Response.Write("<script>alert('Invalid Member ID');</script>");
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Invalid Member ID','warning')", true);
             }
         }
         void getmemberbyid()
@@ -103,7 +104,7 @@ namespace LibraryManagement
                 }
                 else
                 {
-                    Response.Write("<script>alert('Invalid Member ID');</script>");
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Invalid Member ID','warning')", true);
                 }
 
             }
@@ -126,7 +127,8 @@ namespace LibraryManagement
                 command.ExecuteNonQuery();
                 sqlconnection.Close();
 
-                Response.Write("<script>alert('Member Status is Updated');</script>");
+             
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Member Status is Updated','Success')", true);
             }
             catch (Exception ex)
             {
@@ -147,7 +149,9 @@ namespace LibraryManagement
                 command.ExecuteNonQuery();
                 sqlconnection.Close();
 
-                Response.Write("<script>alert('Member is Deleted');</script>");
+              
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Member is Deleted!','Success')", true);
+
             }
             catch (Exception ex)
             {

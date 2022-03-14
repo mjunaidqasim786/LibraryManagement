@@ -35,7 +35,8 @@ namespace LibraryManagement
         {
             if (checkIfBookExists())
             {
-                Response.Write("<script>alert('Book Already Exists, try some other Book ID');</script>");
+
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Book Already Exist Try Another One','error')", true);
             }
             else
             {
@@ -69,7 +70,7 @@ namespace LibraryManagement
 
                     cmd.ExecuteNonQuery();
                     con.Close();
-                    Response.Write("<script>alert('Book Deleted Successfully');</script>");
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Book Deleted Successfully','Success')", true);
 
                     GridView1.DataBind();
 
@@ -82,7 +83,7 @@ namespace LibraryManagement
             }
             else
             {
-                Response.Write("<script>alert('Invalid Member ID');</script>");
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Invalid Member ID','error')", true);
             }
         }
 
@@ -105,7 +106,8 @@ namespace LibraryManagement
                     {
                         if (actual_stock < global_issued_books)
                         {
-                            Response.Write("<script>alert('Actual Stock value cannot be less than the Issued books');</script>");
+                           
+                            ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Actual Stock value cannot be less than the Issued books','warning')", true);
                             return;
 
 
@@ -162,7 +164,8 @@ namespace LibraryManagement
                     cmd.ExecuteNonQuery();
                     con.Close();
                     GridView1.DataBind();
-                    Response.Write("<script>alert('Book Updated Successfully');</script>");
+                  
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Book Updated Successfully','Success')", true);
 
 
                 }
@@ -173,7 +176,8 @@ namespace LibraryManagement
             }
             else
             {
-                Response.Write("<script>alert('Invalid Book ID');</script>");
+               
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Invalid Book ID','warning')", true);
             }
         }
 
@@ -229,7 +233,7 @@ namespace LibraryManagement
                 }
                 else
                 {
-                    Response.Write("<script>alert('Invalid Book ID');</script>");
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Invalid Book ID','warning')", true);
                 }
 
             }
@@ -347,7 +351,8 @@ namespace LibraryManagement
 
                 cmd.ExecuteNonQuery();
                 con.Close();
-                Response.Write("<script>alert('Book added successfully.');</script>");
+               
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Book added successfully!','Success')", true);
                 GridView1.DataBind();
 
             }

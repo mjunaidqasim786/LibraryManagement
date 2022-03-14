@@ -40,7 +40,8 @@ namespace LibraryManagement
                 {
                     while (sqlDataReader.Read())
                     {
-                        Response.Write("<script>alert('Login Successful');</script>");
+                       
+                        ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Exxcellent!','Login Successful!','Success')", true);
                         Session["username"] = sqlDataReader.GetValue(8).ToString();
                         Session["fullname"] = sqlDataReader.GetValue(0).ToString();
                         Session["role"] = "user";
@@ -51,7 +52,8 @@ namespace LibraryManagement
                 }
                 else
                 {
-                    Response.Write("<script>alert('Invalid UserName Or Password');</script>");
+                 
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Invalid UserName Or Password!','error')", true);
                 }
 
             }

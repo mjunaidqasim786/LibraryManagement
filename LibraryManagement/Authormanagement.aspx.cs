@@ -22,7 +22,7 @@ namespace LibraryManagement
         {
           if(CheckAuthorID())
             {
-                Response.Write("<script>alert('Author ID Already Exists Try An other One');</script>");
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Author ID already exist','error')", true);
             }
             else
             {
@@ -37,8 +37,9 @@ namespace LibraryManagement
                     SqlCommand command = new SqlCommand(query, sqlconnection);
                     command.ExecuteNonQuery();
                     sqlconnection.Close();
-                    Response.Write("<script>alert('Author Added Sucessfully');</script>");
+                   
                     GridView1.DataBind();
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Author added Successfully','Success')", true);
                 }
                 catch (Exception ex)
                 {
@@ -53,13 +54,14 @@ namespace LibraryManagement
         {
             if (CheckAuthorID())
             {
-                Response.Write("<script>alert('Author Updated Sucessfully');</script>");
+                
                 updateauthor();
                 GridView1.DataBind();
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Author Updated Successfully','Success')", true);
             }
             else
             {
-                Response.Write("<script>alert('Author Does not Exist');</script>");
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Author Does not exist','error')", true);
             }
             clearform();
        
@@ -70,7 +72,7 @@ namespace LibraryManagement
             if (CheckAuthorID())
             {
                 deleteauthor();
-                Response.Write("<script>alert('Author Deleted Sucessfully');</script>");
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','Author Deleted Successfully','Success')", true);
                 GridView1.DataBind();
             }
             else
@@ -144,7 +146,8 @@ namespace LibraryManagement
                 }
                 else
                 {
-                    Response.Write("<script>alert('Invalid Author ID');</script>");
+
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Author ID is not correct!','error')", true);
                 }
 
             }

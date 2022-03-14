@@ -30,7 +30,7 @@ namespace LibraryManagement
             {
                 if(checkissueentryexist())
                 {
-                    Response.Write("<script>alert('This book is already issued to this member You Can not Issue same book to same member two Times! ');</script>");
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','This book is already issued to this member You Can not Issue same book to same member two Times! ','warning')", true);
                 }
                 else
                 {
@@ -40,7 +40,8 @@ namespace LibraryManagement
             }
             else
             {
-                Response.Write("<script>alert('Wrong Member ID or Book ID');</script>");
+               
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Wrong Member ID or Book ID!','warning')", true);
             }
         }
         //return
@@ -55,13 +56,14 @@ namespace LibraryManagement
                 }
                 else
                 {
-                    Response.Write("<script>alert('This Entry Does Not Exists');</script>");
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','This Entry Does Not Exists','warning')", true);
                 }
 
             }
             else
             {
-                Response.Write("<script>alert('Wrong Member ID or Book ID');</script>");
+                
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Wrong Member ID or Book ID','warning')", true);
             }
         }
         
@@ -88,7 +90,8 @@ namespace LibraryManagement
                 }
                 else
                 {
-                    Response.Write("<script>alert('Invalid Book Id');</script>");
+                 
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','Invalid Book Id','warning')", true);
                 }
                 string query2 = "SELECT Full_NAME FROM Member_Table WHERE Member_ID='"+TextBox2.Text.Trim()+"';";
                sqlCommand = new SqlCommand(query2, sqlconnection);
@@ -101,7 +104,8 @@ namespace LibraryManagement
                 }
                 else
                 {
-                    Response.Write("<script>alert('Invalid Member Id');</script>");
+                   
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information!','Invalid Member Id','warning')", true);
                 }
             }
             catch (Exception ex)
@@ -175,7 +179,8 @@ namespace LibraryManagement
             {
                 if (TextBox3.Text == "" || TextBox1.Text == "")
                 {
-                    Response.Write("<script>alert('Enter Member ID And Book ID And Click Go Button');</script>");
+                    
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information!','Enter Member ID And Book ID And Click Go Button','warning')", true);
                 }
                 else
                 {
@@ -194,7 +199,8 @@ namespace LibraryManagement
 
                     sqlconnection.Close();
                     GridView1.DataBind();
-                    Response.Write("<script>alert('BOOK Issued Successfully');</script>");
+                   
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','BOOK Issued Successfully','Success')", true);
                 }
             }
             catch (Exception ex)
@@ -238,7 +244,8 @@ namespace LibraryManagement
             {
                 if (TextBox3.Text == "" || TextBox1.Text == "")
                 {
-                    Response.Write("<script>alert('Enter Member ID And Book ID And Click Go Button');</script>");
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information!','Enter Member ID And Book ID And Click Go Button','warning')", true);
+
                 }
                 else
                 {
@@ -256,7 +263,8 @@ namespace LibraryManagement
                         string query2 = "UPDATE Book_Table SET Current_Stock=Current_Stock+1 WHERE Book_ID='" + TextBox4.Text.Trim() + "';";
                         command = new SqlCommand(query2, sqlconnection);
                         command.ExecuteNonQuery();
-                        Response.Write("<script>alert('BOOK Returned Successfully');</script>");
+                       
+                        ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Welldone!','BOOK Returned Successfully','Success')", true);
                     }
                     
 

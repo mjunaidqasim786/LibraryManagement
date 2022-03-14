@@ -22,7 +22,8 @@ namespace LibraryManagement
         {
             if(CheckUserID())
             {
-                Response.Write("<script>alert('User ID already Exists Try Another One');</script>");
+        
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Invalid Information','User ID already Exists Try Another One','warning')", true);
             }
             else
             {
@@ -82,7 +83,8 @@ namespace LibraryManagement
                 SqlCommand command = new SqlCommand(query, sqlconnection);
                 command.ExecuteNonQuery();
                 sqlconnection.Close();
-                Response.Write("<script>alert('Sign Up Sucessful. Go to User Login To Login');</script>");
+             
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Excellent!','Sign Up Sucessful. Go to User Login To Login','Success')", true);
             }
             catch (Exception ex)
             {
