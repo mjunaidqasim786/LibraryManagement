@@ -10,7 +10,7 @@ namespace LibraryManagement
     public partial class Main : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
+        { 
             try
             {
                 if (Session["role"].Equals(""))
@@ -63,7 +63,7 @@ namespace LibraryManagement
             }
             catch(Exception ex)
             {
-                Response.Write("<script>alert('" + ex.Message + "');</script>");
+                Response.Write("<script>gg('" + ex.Message + "');</script>");
             }
         }
 
