@@ -77,7 +77,7 @@ namespace LibraryManagement
             }
             else
             {
-                Response.Write("<script>alert('Author Does not Exist');</script>");
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "k", "Swal.fire('Wrong info!','Author Does not exist!','error')", true);
             }
             clearform();
             GridView1.DataBind();
